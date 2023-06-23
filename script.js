@@ -153,4 +153,4 @@ const displayModalDetails= (phone) => {
 
 
 // defult perameter for phone loeaded
-loadPones('iphone');
+// loadPones('iphone');

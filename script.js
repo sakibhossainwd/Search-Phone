@@ -130,6 +130,7 @@ const displayModalDetails= (phone) => {
     detailsContainer.innerHTML = ''
     const modalBody = document.createElement('div');
     const allSensors = phone.mainFeatures.sensors;
+    console.log(allSensors);
     allSensors.forEach(sensor => {
         const sensors = sensor;
         console.log(sensors)
@@ -140,7 +141,7 @@ const displayModalDetails= (phone) => {
         <li>ChipSet: ${phone.mainFeatures.chipSet}</li>
         <li>DisplaySize: ${phone.mainFeatures.displaySize}</li>
         <li>Memory: ${phone.mainFeatures.memory}</li>
-        <li>Sensors: ${sensors}</li>
+        <li>Sensors: ${allSensors}</li>
         <li>Storage: ${phone.mainFeatures.storage}</li>
     </ul>
     <h5>ReleaseDate: ${phone.releaseDate  ? phone.releaseDate : 'No Release Date Found'}</h5>
@@ -153,4 +154,4 @@ const displayModalDetails= (phone) => {
 
 
 // defult perameter for phone loeaded
-// loadPones('iphone');
+loadPones('iphone');

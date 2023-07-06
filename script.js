@@ -133,7 +133,7 @@ const displayModalDetails= (phone) => {
     console.log(allSensors);
     allSensors.forEach(sensor => {
         const sensors = sensor;
-        console.log(sensors)
+        // console.log(sensors)
         modalBody.innerHTML = `
     <h5>Brand: ${phone.brand}</h5>
     <h5>MainFeatures:-</h5>
@@ -146,7 +146,7 @@ const displayModalDetails= (phone) => {
     </ul>
     <h5>ReleaseDate: ${phone.releaseDate  ? phone.releaseDate : 'No Release Date Found'}</h5>
     `
-    detailsContainer.appendChild(modalBody);
+    
     })
     
 }

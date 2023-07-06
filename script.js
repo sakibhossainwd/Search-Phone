@@ -146,7 +146,7 @@ const displayModalDetails= (phone) => {
     </ul>
     <h5>ReleaseDate: ${phone.releaseDate  ? phone.releaseDate : 'No Release Date Found'}</h5>
     `
-    
+    detailsContainer.appendChild(modalBody);
     })
     
 }
